@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#ebeff5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="#ebeff5"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+
+            android:textColor="#606369"
+            android:textStyle="bold"
+            android:text="History" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contact_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+android:layout_marginBottom="80dp"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_server"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Sync to Server" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:id="@+id/linearLayout1"
+        android:layout_width="match_parent" android:layout_weight="0"
+        android:layout_height="wrap_content">
+        <Button android:text="View Msg" android:id="@+id/btnInbox"
+            android:layout_height="wrap_content" android:layout_weight="0.5"
+            android:visibility="gone"
+            android:layout_width="match_parent"></Button>
+
+
+
+
+    </LinearLayout>
+    <ListView android:layout_width="match_parent"
+        android:layout_weight="1" android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/lvMsg"></ListView>
+
+
+
+
+</LinearLayout>
